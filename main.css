@@ -57,12 +57,15 @@ a {
 
 .buttons ul li {
     padding: 10px;
-    font-weight: bold;
     border-radius: 5px;
     background: #EEE;
     font-size: 1.2em;
     padding: 10px;
     margin: 10px;
+}
+
+.buttons ul li a {
+    padding: 10px;
 }
 
 .buttons ul li a {
@@ -82,12 +85,16 @@ a {
 
 .footer ul li {
     padding: 10px;
+    font-size: 1.5em;
+    margin: 5px;
 }
 
 .left {
     float: left;
+    margin-left: 10px;
 }
 
 .right {
     float: right;
+    margin-right: 10px;
 }
