@@ -1,100 +1,115 @@
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+
 body {
     background-color: #ffffff;
     font-family: arial,san-serif;
     font-size: 10px;
+    margin-bottom: 260px;
 }
 
 /*header */
 
 .header {
-    float: right;
-    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
-.header ul li{
-    padding: 10px;
-}
-
-#sign-in {
-    color: white;
-    border: 1px solid #4285f4;
-    font-weight: bold;
-    background-color: #4285f4;
-    border-radius: 5px;
-    height: 30px;
-    font-size: 1.5em;
-}
-
-/*lists, links */
-
-ul li {
-    list-style-type: none;
-    display: inline-block;
+.header a {
+    text-decoration: blue;
 }
 
 a {
     text-decoration: none;
-    color: #AAA;
+    color: inherit;
 }
 
-/* center of page */
+.header ul {
+    float: right;
+    margin-top: 10px;
+    color: black;
+    font-size: 1.3em;
+}
+
+#sign-in {
+    border: 1px solid #4285f4;
+    border-radius: 5px;
+    background-color: #4285f4;
+    color: white;
+    height: 30px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    display: inline;
+    padding: 10px;
+}
 
 .center {
+    position: relative;
+    top: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding-top: 200px;
+    width: 100%;
 }
 
-.image {
-    width: 272px;
+.search-box {
+    margin-top: 15px;
+    margin-bottom: 25px;
 }
 
 #search-bar {
     width: 500px;
-    height: 32px;
-    margin: 10px;
+    height: 30px;
     border-radius: 10px;
 }
 
-.buttons ul li {
-    padding: 10px;
-    border-radius: 5px;
-    background: #EEE;
-    font-size: 1.2em;
-    padding: 10px;
-    margin: 10px;
+
+#image {
+    width: 272px;
 }
 
-.buttons ul li a {
-    padding: 10px;
+.buttons ul li {
+    border: 1px solid #EEE;
+    border-radius: 3px;
+    background: #EEE;
+    font-size: 1.5em;
 }
 
 .buttons ul li a {
     color: gray;
 }
 
-/* footer */
-
 .footer {
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
-    left: 0px;
-    background: #EEE;
-    border-top: 1px solid #DDD;
-}
-
-.footer ul li {
-    padding: 10px;
-    font-size: 1.5em;
-    margin: 5px;
+    position: fixed;
+    bottom: 0;
+    display: inline-block;
+    width: 100%;
+    border-top: 1px solid lightgray;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    background-color: #f2f2f2;
+    height: 30px;
 }
 
 .left {
     float: left;
-    margin-left: 10px;
+    font-size: 1.5em;
+    color: darkgrey;
 }
 
 .right {
     float: right;
-    margin-right: 10px;
+    font-size: 1.5em;
+    color: darkgrey;
 }
